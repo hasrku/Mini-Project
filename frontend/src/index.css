@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Add this to index.css */
+.MuiContainer-root {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.25s ease-out;
+}
